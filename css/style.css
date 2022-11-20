@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a.active {
+  color: #FF6464;
+}
+.container {
+  max-width: 855px;
+  margin: 0 auto;
+}
+header nav a, .banner-info button {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+}
+header {
+  padding-top: 27px;
+  text-align: right;
+}
+header nav a {
+  color: #000;
+  margin-left: 50px;
+  transition: 0.5s ease;
+}
+header nav a:hover {
+  color: #FF6464;
+}
+.menu {
+  float: right;
+  margin-right: 18px;
+  display: none;
+}
+.menu div {
+  width: 30px;
+  border: 1.6px solid #21243D;
+  background-color: #21243D;
+  margin: 5px;
+}
+/* banner */
+.banner {
+  margin-top: 140px;
+  color: #21243D;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Heebo", sans-serif;
+  align-items: center;
+}
+.banner-info {
+  width: 506px;
+}
+.banner-info h1 {
+  font-size: 44px;
+  line-height: 60px;
+  font-style: normal;
+  font-weight: 700;
+}
+.banner-info p, .feature-content{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 40px;
+}
+.banner-info button {
+  background-color: #FF6464;
+  border-radius: 2px;
+  color: #fff;
+  padding: 13px 20px;
+  margin-top: 104px;
+}
+
+/* posts */
+.posts {
+  background-color: #EDF7FA;
+  font-family: "Heebo", sans-serif;
+  color: #21243D;
+  margin-top: 70px;
+  padding-bottom: 7px;
+  height: auto;
+}
+.posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.posts-header h4, .features h4 {
+  font-style: normal;
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: 400;
+}
+.posts-header a {
+  color: #00A8CC;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.news {
+  display: flex;
+  justify-content: space-between;
+}
+.post {
+  background: #FFFFFF; 
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25); border-radius: 4px;
+  padding-top: 24px;
+  padding-left: 23px;
+  padding-right: 21px;
+  width: 32%;
+  height: auto;
+  font-style: normal;
+}
+.post h2 {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 700;
+}
+.post p.time {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 17px;
+}
+.post p.post-info {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 11px;
+}
+
+/* features */
+.features {
+  color: #21243D;
+  font-style: normal;
+  font-family: "Heebo", sans-serif;
+}
+
+.feature-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.feature-info {
+  width: 594px;
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+}
+span.year {
+  background-color: #142850;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 60px;
+  font-weight: 900;
+  padding: 5px;
+}
+.type {
+  color: #8695A4;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 400;
+  margin-left: 26px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  color: #21243D;
+  margin-top: 85px;
+  font-family: "Heebo", sans-serif;
+}
+footer .socials i {
+  padding: 51px 25px 26px 25px;
+  font-size: 25px;
+}
+footer p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@media only screen and (max-width: 480px) {
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .banner {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .banner-info {
+    width: 100%;
+  }
+  .banner-img {
+    width: 171px;
+    margin-left: 97px;
+  }
+  .banner-info h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .posts-header h4{
+    margin-left: 125px;
+  }
+  .posts-header a {
+    display: none;
+  }
+  .news {
+    display: block;
+    padding-bottom: 38px;
+  }
+  .news .post {
+    width: 390px;
+    height: auto;
+    margin-left: 11px;
+    margin-top: 17px;
+  }
+  
+  .post:nth-child(3) {
+    display: none;
+  }
+  .post h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .post p.time, p.post-info  {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .features {
+    margin-left: 18px;
+  }
+  .features h4{
+    margin-left: 100px;
+  }
+  .feature-item {
+    display: block;
+    padding-bottom: 17px;
+  }
+  .feature-item:nth-child(2), .feature-item:nth-child(3) {
+    display: none;
+  }
+  .feature-title {
+    font-size: 24px;
+    line-height: 30px;
+  } 
+  footer {
+    margin-top: 150px;
+  }
+}
