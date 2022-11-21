@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.clr {
+  clear: both;
+}
 a {
   text-decoration: none;
 }
@@ -48,13 +51,12 @@ header nav a:hover {
 .banner {
   margin-top: 140px;
   color: #21243D;
-  display: flex;
-  justify-content: space-between;
   font-family: "Heebo", sans-serif;
   align-items: center;
 }
 .banner-info {
   width: 506px;
+  float: left;
 }
 .banner-info h1 {
   font-size: 44px;
@@ -77,6 +79,9 @@ header nav a:hover {
   margin-top: 104px;
   border: none;
 }
+.banner-img {
+  float: right;
+}
 
 /* posts */
 .posts {
@@ -86,6 +91,7 @@ header nav a:hover {
   margin-top: 70px;
   padding-bottom: 7px;
   height: auto;
+  padding-bottom: 20px;
 }
 .posts-header {
   display: flex;
@@ -148,6 +154,7 @@ header nav a:hover {
   align-items: center;
   padding-top: 30px;
   border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 20px;
 }
 .features-info {
   width: 594px;
@@ -214,7 +221,7 @@ footer p {
   }
   .banner-img {
     width: 171px;
-    margin-left: 97px;
+    margin-right: 150px;
   }
   .banner-info h1 {
     font-size: 32px;
@@ -236,10 +243,6 @@ footer p {
     margin-left: 11px;
     margin-top: 17px;
   }
-  
-  .post:nth-child(3) {
-    display: none;
-  }
   .post h2 {
     font-size: 22px;
     line-height: 30px;
@@ -257,6 +260,9 @@ footer p {
   .feature-item {
     display: block;
     padding-bottom: 17px;
+  }
+  .feature-item p.feature-content {
+    width: 350px;
   }
   .feature-item:nth-child(2), .feature-item:nth-child(3) {
     display: none;
