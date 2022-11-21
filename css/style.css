@@ -75,6 +75,7 @@ header nav a:hover {
   color: #fff;
   padding: 13px 20px;
   margin-top: 104px;
+  border: none;
 }
 
 /* posts */
@@ -113,7 +114,7 @@ header nav a:hover {
   padding-top: 24px;
   padding-left: 23px;
   padding-right: 21px;
-  width: 32%;
+  width: 48%;
   height: auto;
   font-style: normal;
 }
@@ -144,13 +145,13 @@ header nav a:hover {
 
 .feature-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 30px;
   border-bottom: 1px solid #E0E0E0;
 }
-.feature-info {
+.features-info {
   width: 594px;
+  margin-left: 20px;
 }
 .feature-title {
   font-weight: 700;
@@ -184,6 +185,9 @@ footer {
 footer .socials i {
   padding: 51px 25px 26px 25px;
   font-size: 25px;
+}
+footer .socials i:hover {
+  color: #FF6464;
 }
 footer p {
   font-size: 14px;
