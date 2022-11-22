@@ -205,6 +205,9 @@ footer p {
 
 
 @media only screen and (max-width: 480px) {
+  body {
+    max-width: 480px;
+  }
   nav {
     display: none;
   }
@@ -253,13 +256,21 @@ footer p {
   }
   .features {
     margin-left: 18px;
+    width: 400px;
   }
   .features h4{
     margin-left: 100px;
   }
+  .feature-content {
+    width: 400px;
+  }
   .feature-item {
     display: block;
+    width: 400px;
     padding-bottom: 17px;
+  }
+  .features-info {
+    width: 400px;
   }
   .feature-item p.feature-content {
     width: 350px;
